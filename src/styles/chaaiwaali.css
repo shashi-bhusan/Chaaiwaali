@@ -1,0 +1,115 @@
+/* Chaaiwaali Brand Colors & Custom Styles */
+
+:root {
+  /* Brand Colors */
+  --navy: #1a2332;
+  --gold: #c9a961;
+  --ivory: #f5f3ef;
+  --sage: #8a9a8c;
+  
+  /* Override some default theme colors for brand consistency */
+  --background: var(--ivory);
+  --foreground: var(--navy);
+  --primary: var(--navy);
+  --accent: var(--gold);
+}
+
+/* Elegant serif headings */
+.serif-heading {
+  font-family: "Playfair Display", "Merriweather", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* Clean sans-serif body */
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--ivory);
+  color: var(--navy);
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: var(--navy);
+  color: var(--ivory);
+  padding: 1rem 2.5rem;
+  border-radius: 0;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: 2px solid var(--navy);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--navy);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--navy);
+  padding: 1rem 2.5rem;
+  border-radius: 0;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: 2px solid var(--navy);
+}
+
+.btn-secondary:hover {
+  background-color: var(--navy);
+  color: var(--ivory);
+}
+
+/* Gold accent border */
+.gold-accent {
+  border-color: var(--gold);
+}
+
+/* Section spacing */
+.section-padding {
+  padding: 6rem 2rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 8rem 4rem;
+  }
+}
+
+/* Max width container */
+.container-chaai {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Elegant divider */
+.divider-elegant {
+  width: 60px;
+  height: 2px;
+  background-color: var(--gold);
+  margin: 2rem auto;
+}
+
+/* Image overlay for hero sections */
+.hero-overlay {
+  position: relative;
+}
+
+.hero-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(26, 35, 50, 0.5), rgba(26, 35, 50, 0.7));
+  z-index: 1;
+}
+
+.hero-overlay > * {
+  position: relative;
+  z-index: 2;
+}
