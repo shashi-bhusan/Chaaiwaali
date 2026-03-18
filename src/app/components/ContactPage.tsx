@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { User, Mail, MapPin, Phone, MessageSquare, Loader2 } from 'lucide-react';
 
-const WEB3FORMS_KEY = '4c57069f-447a-409a-bc1a-794ce51525ec';
+const WEB3FORMS_KEY = 'ce298f8e-aba3-4ecf-9e09-77e0b0a8dc4a';
 
 export function ContactPage() {
   const [formData, setFormData] = useState({
