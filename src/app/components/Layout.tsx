@@ -20,8 +20,8 @@ export function Layout() {
         <nav className="container-chaai px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="serif-heading text-2xl md:text-3xl tracking-wider">
-              CHAAIWAALI
+            <Link to="/" className="flex items-center">
+              <img src="/logo.png" alt="Chaaiwaali — The Art of Chai" className="h-14 md:h-16 w-auto" />
             </Link>
 
             {/* Desktop Navigation */}
@@ -124,9 +124,11 @@ export function Layout() {
         <div className="container-chaai px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="serif-heading text-xl mb-4">CHAAIWAALI</h3>
-              <p className="text-sm opacity-80">
-                The Art of Chai. Refined.
+              <Link to="/">
+                <img src="/logo.png" alt="Chaaiwaali" className="h-28 w-auto mb-4" />
+              </Link>
+              <p className="text-sm opacity-70 max-w-xs leading-relaxed">
+                A modern hospitality ritual rooted in Indian heritage and elevated with British elegance.
               </p>
             </div>
             

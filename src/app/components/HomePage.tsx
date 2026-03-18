@@ -16,6 +16,7 @@ export function HomePage() {
         </div>
 
         <div className="relative z-10 text-center text-[var(--ivory)] px-6 max-w-4xl mx-auto">
+          <img src="/logo.png" alt="Chaaiwaali crest" className="h-28 md:h-36 w-auto mx-auto mb-8 drop-shadow-2xl" />
           <h1 className="serif-heading text-5xl md:text-7xl mb-6">
             The Art of Chai. Refined.
           </h1>
@@ -34,8 +35,9 @@ export function HomePage() {
       </section>
 
       {/* Philosophy Section */}
-      <section className="section-padding bg-[var(--ivory)]">
-        <div className="container-chaai max-w-3xl mx-auto text-center">
+      <section className="section-padding bg-[var(--ivory)] relative overflow-hidden">
+        <img src="/logo.png" alt="" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-auto opacity-[0.04] pointer-events-none select-none" aria-hidden="true" />
+        <div className="container-chaai max-w-3xl mx-auto text-center relative z-10">
           <h2 className="serif-heading text-4xl md:text-5xl mb-6 text-[var(--navy)]">
             Ritual, Not Refreshment
           </h2>
