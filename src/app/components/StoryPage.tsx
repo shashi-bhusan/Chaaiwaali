@@ -45,8 +45,8 @@ export function StoryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div>
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1762199904138-d163fe89540a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuYXR1cmFsJTIwbGlnaHQlMjBsaW5lbiUyMHRleHR1cmUlMjBtaW5pbWFsfGVufDF8fHx8MTc3Mjk2OTI3OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Natural light and linen"
+                src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&w=1080&q=80"
+                alt="Masala chai with warm spices"
                 className="w-full h-full object-cover rounded-sm"
               />
             </div>

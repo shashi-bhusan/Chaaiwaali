@@ -1,6 +1,8 @@
 import { Link } from 'react-router';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
+const logoUrl = `${import.meta.env.BASE_URL}logo.png`;
+
 export function HomePage() {
   return (
     <div>
@@ -8,15 +10,15 @@ export function HomePage() {
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1566830221452-09d8c4437448?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwYnJhc3MlMjB0ZWFwb3QlMjBsaW5lbiUyMGNsb3RoJTIwZmxvcmFsc3xlbnwxfHx8fDE3NzI5NjkyNzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Elegant brass teapot"
+            src="https://images.unsplash.com/photo-1686354715908-b9f0d329a41f?auto=format&fit=crop&w=1920&q=80"
+            alt="Elegant vintage tea service with gold accents"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-navy/60 to-navy/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-[#1a2332]/50 via-[#1a2332]/60 to-[#1a2332]/85"></div>
         </div>
 
         <div className="relative z-10 text-center text-[var(--ivory)] px-6 max-w-4xl mx-auto">
-          <img src="/logo.png" alt="Chaaiwaali crest" className="h-28 md:h-36 w-auto mx-auto mb-8 drop-shadow-2xl" />
+          <img src={logoUrl} alt="Chaaiwaali crest" className="h-40 md:h-52 w-auto mx-auto mb-8 drop-shadow-2xl" />
           <h1 className="serif-heading text-5xl md:text-7xl mb-6">
             The Art of Chai. Refined.
           </h1>
@@ -36,7 +38,7 @@ export function HomePage() {
 
       {/* Philosophy Section */}
       <section className="section-padding bg-[var(--ivory)] relative overflow-hidden">
-        <img src="/logo.png" alt="" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-auto opacity-[0.04] pointer-events-none select-none" aria-hidden="true" />
+        <img src={logoUrl} alt="" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-auto opacity-[0.04] pointer-events-none select-none" aria-hidden="true" />
         <div className="container-chaai max-w-3xl mx-auto text-center relative z-10">
           <h2 className="serif-heading text-4xl md:text-5xl mb-6 text-[var(--navy)]">
             Ritual, Not Refreshment

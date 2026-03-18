@@ -1,10 +1,16 @@
 import { Outlet, Link, useLocation } from 'react-router';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+
+const logoUrl = `${import.meta.env.BASE_URL}logo.png`;
 
 export function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   const isActive = (path: string) => {
     if (path === '/') {
@@ -21,7 +27,7 @@ export function Layout() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <img src="/logo.png" alt="Chaaiwaali — The Art of Chai" className="h-14 md:h-16 w-auto" />
+              <img src={logoUrl} alt="Chaaiwaali — The Art of Chai" className="h-20 md:h-24 w-auto" />
             </Link>
 
             {/* Desktop Navigation */}
@@ -125,7 +131,7 @@ export function Layout() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
               <Link to="/">
-                <img src="/logo.png" alt="Chaaiwaali" className="h-28 w-auto mb-4" />
+                <img src={logoUrl} alt="Chaaiwaali" className="h-28 w-auto mb-4" />
               </Link>
               <p className="text-sm opacity-70 max-w-xs leading-relaxed">
                 A modern hospitality ritual rooted in Indian heritage and elevated with British elegance.
@@ -157,9 +163,9 @@ export function Layout() {
               <h4 className="text-sm tracking-wider uppercase mb-4">Contact</h4>
               <ul className="space-y-2 text-sm opacity-80">
                 <li>
-                  <a href="mailto:hello@chaaiwaali.com" className="hover:text-[var(--gold)] transition-colors">
-                    hello@chaaiwaali.com
-                  </a>
+                  <Link to="/contact" className="hover:text-[var(--gold)] transition-colors">
+                    Inquiry Form
+                  </Link>
                 </li>
                 <li>Glasgow, UK</li>
               </ul>
@@ -179,7 +185,7 @@ export function Layout() {
 
           <div className="border-t border-[var(--ivory)]/20 pt-8 text-center">
             <p className="text-sm opacity-60">
-              © 2026 Chaaiwaali. All rights reserved.
+              Designed by beenaIT Solutions. All rights reserved.
             </p>
           </div>
         </div>
