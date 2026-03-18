@@ -5,15 +5,18 @@ import { StoryPage } from "./components/StoryPage";
 import { CorporatePage } from "./components/CorporatePage";
 import { FranchisePage } from "./components/FranchisePage";
 
-export const router = createBrowserRouter([
-  {
-    path: "/",
-    Component: Layout,
-    children: [
-      { index: true, Component: HomePage },
-      { path: "story", Component: StoryPage },
-      { path: "corporate", Component: CorporatePage },
-      { path: "franchise", Component: FranchisePage },
-    ],
-  },
-]);
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      Component: Layout,
+      children: [
+        { index: true, Component: HomePage },
+        { path: "story", Component: StoryPage },
+        { path: "corporate", Component: CorporatePage },
+        { path: "franchise", Component: FranchisePage },
+      ],
+    },
+  ],
+  { basename: "/Chaaiwaali" }
+);
