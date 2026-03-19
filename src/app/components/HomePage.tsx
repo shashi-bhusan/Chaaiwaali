@@ -20,16 +20,16 @@ export function HomePage() {
         <div className="relative z-10 text-center text-[var(--ivory)] px-6 max-w-4xl mx-auto">
           <img src={logoUrl} alt="Chaaiwaali crest" className="h-40 md:h-52 w-auto mx-auto mb-8 drop-shadow-2xl" />
           <h1 className="serif-heading text-5xl md:text-7xl mb-6">
-            The Art of Chai. Refined.
+            The Art of Chai
           </h1>
           <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
             A modern hospitality ritual rooted in Indian heritage and elevated with British elegance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/corporate" className="btn-primary">
+            <Link to="/contact" className="btn-primary">
               Book a Corporate Experience
             </Link>
-            <Link to="/story" className="btn-secondary bg-transparent border-[var(--ivory)] text-[var(--ivory)] hover:bg-[var(--ivory)] hover:text-[var(--navy)]">
+            <Link to="/story" className="btn-primary">
               Discover Our Story
             </Link>
           </div>
@@ -119,11 +119,6 @@ export function HomePage() {
             </div>
           </div>
 
-          <div className="text-center">
-            <button className="btn-secondary">
-              View Full Collection
-            </button>
-          </div>
         </div>
       </section>
 
@@ -160,7 +155,7 @@ export function HomePage() {
               <p className="text-sm leading-relaxed text-[var(--navy)]/70 mb-8">
                 Our team operates with professional discretion, insurance compliance, and premium presentation standards.
               </p>
-              <Link to="/corporate" className="btn-primary">
+              <Link to="/contact" className="btn-primary">
                 Request a Proposal
               </Link>
             </div>
@@ -197,9 +192,9 @@ export function HomePage() {
               <p className="text-lg leading-relaxed text-[var(--navy)]/80 mb-8">
                 We design bespoke chai experiences that feel intentional, not performative.
               </p>
-              <button className="btn-primary">
+              <Link to="/contact" className="btn-primary">
                 Plan Your Event
-              </button>
+              </Link>
             </div>
           </div>
         </div>

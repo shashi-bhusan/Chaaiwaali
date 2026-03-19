@@ -28,13 +28,13 @@ export function StoryPage() {
           </h2>
           <div className="divider-elegant"></div>
           <p className="text-lg leading-relaxed text-[var(--navy)]/80 mb-6">
-            Chaaiwaali began with a simple belief: chai deserves intention.
+            From the mist-veiled Highlands to the rugged coastlines of Scotland, the inspiration for Chaiwalli was born out of a simple, heartfelt longing.
           </p>
           <p className="text-lg leading-relaxed text-[var(--navy)]/80 mb-6">
-            Across generations, chai has been a connector. In homes, in workplaces, in moments of comfort. We sought to present it with the refinement it has always deserved.
+            Surrounded by Scotland's majestic landscapes, our founder found themselves missing one vital thing: the soulful warmth and vibrant joy of a truly authentic cup of chai.
           </p>
           <p className="text-lg leading-relaxed text-[var(--navy)]/80">
-            What started as a passion for authentic chai craft has evolved into a hospitality brand that bridges cultures, generations, and modern business needs.
+            We believed that distance shouldn't mean compromising on tradition. That spark of nostalgia evolved into a mission: to capture the complex, aromatic essence of authentic spices and premium tea in a form that fits a modern lifestyle.
           </p>
         </div>
       </section>

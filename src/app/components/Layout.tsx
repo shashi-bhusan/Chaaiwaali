@@ -167,7 +167,6 @@ export function Layout() {
                     Inquiry Form
                   </Link>
                 </li>
-                <li>Glasgow, UK</li>
               </ul>
             </div>
 
